@@ -1,12 +1,11 @@
 
 h1 {
     text-align: center;
-    padding: 20px;
+    padding: 10% 0 0;
 }
 
 .question {
     margin: 10%;
-    padding: 0 10% 0;
 }
 body {
     background-color: #E6E6FA;
@@ -18,9 +17,40 @@ body {
     border-radius: 10px;
 }
 
-span {
-    display: block;
-    padding: 0 10% 0 30px;
+legend {
+    margin: 0 auto;
 }
 
+.equation {
+    text-align: center;
+}
 
+span {
+    display: block;
+    padding: 0 0 0 30px;
+    font-size: 90%;
+}
+
+input[type=submit] {
+    padding: 2% 5%;   
+    background-color: #E6E6FA; 
+    margin: 5% 40%;
+}
+
+input[type=text] {
+    width: 50%; 
+    display: inline;
+}
+.answer-box {
+    margin: 0 30% 0;
+}
+
+#finished {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#finalScore {
+    font-size: 20px;
+}

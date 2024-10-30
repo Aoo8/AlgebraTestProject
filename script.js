@@ -25,7 +25,7 @@ function checkTextBoxes() {
 }
 
 const answerBoxes = document.querySelectorAll(".answer-box");
-let answerCorrect = false;
+let answersCorrect = 0;
 
 function checkAnswers() {
     for (let i = 0; i < answerBoxes.length; i++) {
@@ -34,18 +34,23 @@ function checkAnswers() {
             console.log(`input: type=${inputs[j].value}, value=${inputs[j].value}, checked=${inputs[j].checked}`)
            if ((inputs[j].type === "text") && (inputs[j].value === answers[i])) {
                 console.log(i + ". correct: " + inputs[j].value)
-                answerCorrect = true;
+                answersCorrect++;
                 break;
            } else if ((inputs[j].checked === true) && (inputs[j].value === answers[i])) {
                 console.log(i + ". correct:" + inputs[j].value)
-                answerCorrect = true;
+                answersCorrect++;
                 break;
            } 
         }
-
-        console.log(`${i}: ${answerCorrect}`)
-        answerCorrect = false;
     }
+}
+
+function calculateAnswers() {
+    let finalScore = answersCorrect * 10;
+    let revealScore = document.querySelector("#finalScore");
+    revealScore.textContent = finalScore + "%";
+    let answerLink = document.querySelector("a");
+    answerLink.removeAttribute("hidden")
 }
 
 
@@ -55,5 +60,6 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log(e)
     checkAnswers()
+    calculateAnswers();
     
 })
