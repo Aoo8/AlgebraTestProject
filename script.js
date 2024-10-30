@@ -61,5 +61,5 @@ form.addEventListener("submit", (e) => {
     console.log(e)
     checkAnswers()
     calculateAnswers();
-    
+    window.scrollTo(0, 0)   
 })
