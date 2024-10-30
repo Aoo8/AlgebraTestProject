@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Algebra Test</title>
+</head>
+<body>
+    <form action="" method="post" id="test">
+        <h1>Algebra Test: Chapter 4</h1>
+        <fieldset class="question">
+            <legend>1. Is (4, -2) the ordered pair for this system:</legend>
+            <p class="equation"> 3x - 7y = 26</p>
+            <p class="equation"> 2x + 5y = -2</p>
+            <div class="answer-box">
+                <p class="answer yes"> 
+                    <input type="radio" id="yesQ1" required name="Q1" value="Yes">
+                    <label for="yesQ1">Yes</label>
+                </p> 
+                <p class="answer no">
+                    <input type="radio" id="noQ1" required name="Q1" value="No">
+                    <label for="noQ1">No</label>
+
+                </p>
+            </div>
+        </fieldset>
+        <fieldset class="question">
+            <legend>2. Is (-3, -1) the ordered pair for this system:</legend>
+            <p class="equation">    -x + 4y = -1    </p>
+            <p class="equation">    -3x - 9y = 14   </p>
+            <div class="answer-box">
+                <p class="answer yes">
+                    <input type="radio" id="yesQ2" required name="Q2" value="Yes">
+                    <label for="yesQ2">Yes</label>
+                </p>
+                <p class="answer no">
+                    <input type="radio" id="noQ2" required name="Q2" value="No">
+                    <label for="noQ2">No</label>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset class="question">
+            <legend>3. Solve the system of linear equations using graphing: </legend>
+            <p class="equation">    4x + 2y = 6     </p>
+            <p class="equation">    ⅓x = 5          </p>
+            <div class="answer-box">
+                <p class="answer solution"> 
+                    <input type="radio" id="buttonQ3" value="Solution" required name="Q3">
+                    <label for="buttonQ3">Solution: </label>
+                    <input type="text" id="solutionQ3" name="Q3">
+                    <span class="solutionMessage">Enter an ordered pair with no spaces between commas. E.g: (1,1)</span>
+                </p>
+                <p class="answer no">
+                    <input type="radio" id="manyQ3" required name="Q3" value="Infinitely Many">
+                    <label for="manyQ3">Infinitely Many</label>
+                </p>
+                <p class="answer yes">
+                    <input type="radio" id="noneQ3" require name="Q3" value="No Solutions">
+                    <label for="noneQ3">No Solutions</label>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset class="question">
+            <legend>4. Solve the system of linear equations using graphing: </legend>
+            <p class="equation">    6x - 24y = 12   </p>
+            <p class="equation">    x - 4y = 2      </p>
+            <div class="answer-box">
+                <p class="answer solution">
+                    <input type="radio" id="buttonQ4" value="Solution" required name="Q4">
+                    <label for="buttonQ4">Solution: </label>
+                    <input type="text" id="solutionQ4" name="Q4">
+                    <span class="solutionMessage">Enter an ordered pair with no spaces between commas. E.g: (1,1)</span>                </p>
+                <p class="answer no">
+                    <input type="radio" id="manyQ4" required name="Q4" value="Infinitely Many">
+                    <label for="manyQ4">Infinitely Many</label>
+                </p>
+                <p class="answer yes">
+                    <input type="radio" id="noneQ4" require name="Q4" value="No Solutions">
+                    <label for="noneQ4">No Solutions</label>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset class="question">
+            <legend>5. Solve the system of linear equations using substitution: </legend>
+            <p class="equation">    x - 2y = 5      </p>
+            <p class="equation">    5x + 4y = 67    </p>
+            <div class="answer-box">
+                <p class="answer solution">
+                    <input type="radio" id="buttonQ5" value="Solution" required name="Q5">
+                    <label for="buttonQ5">Solution: </label>
+                    <input type="text" id="solutionQ5" name="Q5">
+                    <span class="solutionMessage">Enter an ordered pair with no spaces between commas. E.g: (1,1)</span>                </p>
+                <p class="answer no">
+                    <input type="radio" id="manyQ5" required name="Q5" value="Infinitely Many">
+                    <label for="manyQ5">Infinitely Many</label>
+                </p>
+                <p class="answer yes">
+                    <input type="radio" id="noneQ5" require name="Q5" value="No Solutions">
+                    <label for="noneQ5">No Solutions</label>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset class="question">
+            <legend>6. Solve the system of linear equations using substitution: </legend>
+            <p class="equation">    9x - 4y + 11z = -1  </p>
+            <p class="equation">         3y  = 24       </p>
+            <p class="equation">    4x - 8z = -12       </p>
+            <div class="answer-box">
+                <p class="answer solution">
+                    <input type="radio" id="buttonQ6" value="Solution" required name="Q6">
+                    <label for="buttonQ6">Solution: </label>
+                    <input type="text" id="solutionQ6" name="Q6">
+                    <span class="solutionMessage">Enter an ordered pair with no spaces between commas. E.g: (1,1)</span>                </p>
+                <p class="answer no">
+                    <input type="radio" id="manyQ6" required name="Q6" value="Infinitely Many">
+                    <label for="manyQ6">Infinitely Many</label>
+                </p>
+                <p class="answer yes">
+                    <input type="radio" id="noneQ6" require name="Q6" value="No Solutions">
+                    <label for="noneQ6">No Solutions</label>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset class="question">
+            <legend>7. Solve the system of linear equations using elimination: </legend>
+            <p class="equation">    ⅙x + ¾y = 24    </p>
+            <p class="equation">    -16x - 9y = 48  </p>
+            <div class="answer-box">    
+                <p class="answer solution">
+                    <input type="radio" id="buttonQ7" value="solution" required name="Q7">
+                    <label for="buttonQ7">Solution: </label>
+                    <input type="text" id="solutionQ7" name="Q7">
+                    <span class="solutionMessage">Enter an ordered pair with no spaces between commas. E.g: (1,1)</span>                </p>
+                <p class="answer no">
+                    <input type="radio" id="manyQ7" required name="Q7" value="Infinitely Many">
+                    <label for="manyQ7">Infinitely Many</label>
+                </p>
+                <p class="answer yes">
+                    <input type="radio" id="noneQ7" require name="Q7" value="No Solutions">
+                    <label for="noneQ7">No Solutions</label>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset class="question">
+            <legend>8. Solve the system of linear equations using elimination: </legend>
+            <p class="equation">    2x + ⅓y + 8z = 56   </p>
+            <p class="equation">    -6x - y - 24z = 18  </p>
+            <p class="equation">    ⅕x + 3y - 4z = 27   </p>
+            <div class="answer-box">
+                <p class="answer solution">
+                    <input type="radio" id="buttonQ8" value="solution" required name="Q8">
+                    <label for="buttonQ8">Solution: </label>
+                    <input type="text" id="solutionQ8" name="Q8">
+                    <span class="solutionMessage">Enter an ordered pair with no spaces between commas. E.g: (1,1)</span>                </p>
+                <p class="answer no">
+                    <input type="radio" id="manyQ8" required name="Q8" value="Infinitely Many">
+                    <label for="manyQ8">Infinitely Many</label>
+                </p>
+                <p class="answer yes">
+                    <input type="radio" id="noneQ8" require name="Q8" value="No Solutions">
+                    <label for="noneQ8">No Solutions</label>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset class="question">
+            <legend>9. Solve the system of linear equations using matrices: </legend>
+            <p class="equation">    3x + y = 14     </p>
+            <p class="equation">    -7x + 4y = 18   </p>
+            <div class="answer-box">
+                <p class="answer solution">
+                    <input type="radio" id="buttonQ9" value="Solution" required name="Q9">
+                    <label for="buttonQ9">Solution: </label>
+                    <input type="text" id="solutionQ9" name="Q9">
+                    <span class="solutionMessage">Enter an ordered pair with no spaces between commas. E.g: (1,1)</span>                </p>
+                <p class="answer no">
+                    <input type="radio" id="manyQ9" required name="Q9" value="Infinitely Many">
+                    <label for="manyQ9">Infinitely Many</label>
+                </p>
+                <p class="answer yes">
+                    <input type="radio" id="noneQ9" require name="Q9" value="No Solutions">
+                    <label for="noneQ9">No Solutions</label>
+                </p>
+            </div>   
+        </fieldset>
+        <fieldset class="question">
+            <legend>10. Solve the system of linear equations using matrices: </legend>
+            <p class="equation">    x + 2y + 4z = 6     </p>
+            <p class="equation">    -x - y + z = -4     </p>
+            <p class="equation">    -3x - 2y + 8z = -12 </p>
+            <div class="answer-box">
+                <p class="answer solution">
+                    <input type="radio" id="buttonQ10" value="Solution" required name="Q10">
+                    <label for="buttonQ10">Solution: </label>
+                    <input type="text" id="solutionQ10" name="Q10">
+                    <span class="solutionMessage">Enter an ordered pair with no spaces between commas. E.g: (1,1)</span>                </p>
+                <p class="answer no">
+                    <input type="radio" id="manyQ10" required name="Q10" value="Infinitely Many">
+                    <label for="manyQ10">Infinitely Many</label>
+                </p>
+                <p class="answer yes">
+                    <input type="radio" id="noneQ10" require name="Q10" value="No Solutions">
+                    <label for="noneQ10">No Solutions</label>
+                </p>
+            </div>    
+        </fieldset>
+        <input type="submit" value="Submit" >
+    </form>
+    <script src="script.js"></script> 
+</body>
+</html>
